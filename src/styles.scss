@@ -1,0 +1,298 @@
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:400,500&amp;display=swap");
+body{
+  margin: 0px;
+  font-family: "Nunito", sans-serif;
+}
+.floating-container {
+  display: flex;
+  .floating-container-left {
+    background: #faf9ff;
+    flex: 40%;
+    .floating-right-header {
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eceef5;
+      .menu-btn-title {
+        display: flex;
+        align-items: center;
+        .action-button-white {
+          background: #fff;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          color: #8083a3;
+          font-size: 20px;
+          height: 40px;
+          width: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .header-title-list {
+          font-size: 18px;
+          color: #000;
+          margin-left: 15px;
+        }
+      }
+    }
+    .search-section-action {
+      width: 80px;
+      text-align: center;
+      border-left: 1px solid #eceef5;
+      padding: 30px 30px 30px 0px;
+    }
+    .search-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .search-section-field {
+        flex: 1;
+        padding: 30px 0px 30px 30px;
+      }
+    }
+    .search-section p, .search-section h3 {
+      margin: 0px;
+    }
+    .search-section p{
+      color: #8083a3;
+      font-size: 14px;
+    }
+    .search-section h3{
+      color: #000;
+      font-size: 18px;
+    }
+    .search-section-action{
+      color: #8083a3;
+      font-size: 22px;
+    }
+    .left-list {
+      padding: 30px;
+      .list-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .slot-start-item {
+          display: flex;
+          align-items: center;
+          .thumbnai-item {
+            width: 40px;
+            height: 40px;
+            border-radius: 7px;
+            position: relative;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 7px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+          .item-title {
+            padding-left: 15px;
+            p{
+              margin: 0px;
+              color: #8083a3;
+              font-size: 14px;
+            }
+            h4{
+              margin: 0px;
+              font-size: 16px;
+              color: #000;
+            }
+          }
+        }
+        .slot-end-item {
+          display: flex;
+          align-items: center;
+
+          .action-button-active{
+            background: #ededf7;
+            border: 1px solid #ededf7;
+          }
+        }
+      }
+    }
+  }
+  .floating-container-right {
+    background: #fff;
+    flex: 60%;
+    padding: 50px 50px;
+    .active-user-section {
+      display: flex;
+      align-items: center;
+      padding-left: 130px;
+      .active-user-thumbnail {
+        height: 110px;
+        width: 110px;
+        border-radius: 20px;
+        overflow: hidden;
+        img{
+          height: 110px;
+          width: 110px;
+          border-radius: 20px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .active-user-detail {
+        padding-left: 20px;
+        h3{
+          margin: 0px;
+          color: #000;
+          font-size: 18px;
+        }
+        p{
+          color: #8083a3;
+          margin: 0px;
+          font-size: 16px;
+        }
+        .active-user-action {
+          display: flex;
+          align-items: center;
+          margin-top: 25px;
+        }
+      }
+    }
+    .user-details{
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      p{
+        margin-top: 0px;
+      }
+      .detils-title{
+        width: 78px;
+        text-align: right;
+        padding-right: 50px;
+        color: #8083a3;
+        margin: 0px;
+        font-size: 16px;
+        p{
+          color: #8083a3;
+          margin: 0px;
+          font-size: 16px;
+        }
+      }
+      .detils-des{
+        margin: 0px;
+        color: rgb(29, 29, 29);
+        font-size: 16px;
+        flex: min-content;
+      }
+      .detils-indicator {
+        background: #f3f4f9;
+        height: 36px;
+        width: 100px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-size: 18px;
+        color: #8083a3;
+      }
+    }
+  }
+}
+
+
+.mr-10{
+  margin-right: 10px !important;
+}
+
+.online-active {
+  height: 10px;
+  width: 10px;
+  background: #28c345;
+  display: block;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+}
+.online-unactive {
+  height: 10px;
+  width: 10px;
+  background: #f6933e;
+  display: block;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+}
+.online-unactive-span {
+  height: 10px;
+  width: 10px;
+  background: #ff808b;
+  display: block;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+}
+
+.large-action-button{
+  background: #6b59cc;
+  border: 1px solid #6b59cc;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 16px;
+  height: 38px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.small-action-button {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  color: #8083a3;
+  font-size: 20px;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 20px;
+  }
+}
+
+.social-link-button {
+  display: flex;
+  align-items: center;
+}
+
+.user-details-section {
+  margin-top: 50px;
+  padding-right: 100px;
+}
+.mail-details{
+  font-weight: 600;
+  font-size: 18px;
+}
+.mail-details:hover{
+  color: #6b59cc !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (max-width:991px){
+  .floating-container {
+    flex-direction: column;
+    .floating-container-left, .floating-container-right{
+      flex: 100%;
+    }
+  }
+}
+.bg{
+  background: #6b59cc;
+}

@@ -1,0 +1,36 @@
+.email-listing{
+  ul{
+    padding: 0px;
+    li{
+      font-size: 16px;
+      color: #000000;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      list-style: none;
+    }
+  }
+}
+.back-button{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  .btn-back{
+    background: #6b59cc;
+    border: 1px solid #6b59cc;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+.email-listing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+@media screen and (min-width:601px){
+  .email-listing-inner{
+    width: 600px;
+    margin: auto;
+  }
+}

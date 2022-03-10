@@ -1,0 +1,84 @@
+<div  *ngIf="details">
+
+  <div class="active-user-section" >
+    <div class="active-user-thumbnail">
+      <img [src]="details?.avatar" alt="">
+    </div>
+    <div class="active-user-detail">
+      <h3>{{details?.firstName}} {{details?.lastName}}</h3>
+      <p>{{details?.profile}}</p>
+      <div class="active-user-action">
+        <button class="large-action-button mr-10">
+          <img class="mr-10" width="20" src="assets/icon/icon-7.png" alt=""> Message
+        </button>
+        <button class="small-action-button mr-10">
+          <img src="assets/icon/icon-2.png" alt="">
+        </button>
+        <button class="small-action-button mr-10">
+          <img src="assets/icon/icon-8.png" alt="">
+        </button>
+        <button class="small-action-button">
+          <img src="assets/icon/icon-3.png" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="user-details-section">
+    <div class="user-details">
+      <div class="detils-title">Bio</div>
+      <div class="detils-des">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+      </div>
+
+    </div>
+    <div class="user-details">
+      <div class="detils-title">Email</div>
+      <div class="detils-des">
+        <p class="mail-details" (click)="loadEmailDetailsPage(details?.id)">{{details?.email[0]}}</p>
+      </div>
+      <div class="detils-indicator">
+        Primary
+      </div>
+    </div>
+    <div class="user-details">
+      <div class="detils-title">Dial</div>
+      <div class="detils-des">
+        <p>{{details.phone}}</p>
+
+      </div>
+
+    </div>
+    <div class="user-details">
+      <div class="detils-title">Meeting</div>
+      <div class="detils-des">
+        <p>{{details?.email[1]}}</p>
+
+      </div>
+
+    </div>
+    <div class="user-details">
+      <div class="detils-title">Phone</div>
+      <div class="detils-des">
+        <p> 439-582-1578</p>
+        <p> 621-770-7689</p>
+      </div>
+      <div class="detils-indicator">Primary</div>
+    </div>
+    <div class="user-details">
+      <div class="detils-title">Social</div>
+      <div class="detils-des">
+        <div class="social-link-button">
+          <button class="small-action-button mr-10"><img height="20" src="assets/icon/s-1.png" alt=""></button>
+          <button class="small-action-button mr-10"><img src="assets/icon/s-2.png" alt=""></button>
+          <button class="small-action-button mr-10"><img src="assets/icon/s-3.png" alt=""></button>
+          <button class="small-action-button mr-10"><img src="assets/icon/s-4.png" alt=""></button>
+          <button class="small-action-button mr-10"><img src="assets/icon/s-5.png" alt=""></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>

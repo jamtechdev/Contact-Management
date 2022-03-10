@@ -1,0 +1,59 @@
+<div class="main-container">
+  <div class="floating-container">
+    <div class="floating-container-left">
+      <div class="floating-right-header">
+        <div class="menu-btn-title">
+          <button class="humber-menu-btn action-button-white"><i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="header-title-list">Contact</div>
+        </div>
+        <div class="menu-btn-title">
+          <button class="action-button-white mr-10"><i class="fa fa-angle-left" aria-hidden="true"></i>
+          </button>
+          <button class="action-button-white"><i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </div>
+
+      </div>
+      <div class="search-section">
+        <div class="search-section-field">
+          <p>Search for a contact</p>
+          <h3>Name, email or phone number</h3>
+        </div>
+        <div class="search-section-action">
+          <i class="fa fa-search" aria-hidden="true"></i>
+
+        </div>
+      </div>
+      <div class="left-list">
+        <div class="list-item" *ngFor="let contact of contacts " (click)="getDetails(contact)">
+          <div class="slot-start-item" >
+            <div class="thumbnai-item">
+              <img [src]="contact?.avatar" alt="avatar">
+              <span class="online-active"></span>
+            </div>
+            <div class="item-title">
+              <h4>{{contact?.firstName}} {{contact?.lastName}}</h4>
+              <p>{{contact.profile}}</p>
+            </div>
+          </div>
+          <div class="slot-end-item">
+            <button class="small-action-button mr-10">
+              <img src="assets/icon/icon-1.png" alt="">
+            </button>
+            <button class="small-action-button mr-10">
+              <img src="assets/icon/icon-2.png" alt="">
+            </button>
+            <button class="small-action-button">
+              <img src="assets/icon/icon-3.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="floating-container-right">
+      <app-contacts-details *ngIf="details" [details]="details"></app-contacts-details>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,29 @@
+.center-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #6b59cc;
+  .center-container-inner {
+    text-align: center;
+  }
+  a{
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #ededf7;
+    border: 1px solid #ededf7;
+    color: #8083a3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  .contact-m{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+}

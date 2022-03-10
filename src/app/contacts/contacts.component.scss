@@ -1,0 +1,11 @@
+.list-item:hover{
+  background: #8083a34f;
+  color: #000 !important;
+  cursor: pointer;
+  .item-title{
+    p, h4{
+      color: #000000 !important;
+    }
+  }
+}
+
